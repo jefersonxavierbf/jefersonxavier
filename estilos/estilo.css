@@ -1,0 +1,385 @@
+:root {
+    --cor-fonte: #140A08;
+    --cor-fundo: #56C8EA;
+    --cor-hover: #737373;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-fonte);
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+h2 {
+    padding: 2.5rem 0;
+    text-align: center;
+    line-height: 2.25rem;
+    font-size: 2.5rem;
+}
+
+.introducao, 
+.envoltorio-sobre,
+.habilidades,
+.carousel-certificacoes,
+.projetos,
+.envoltorio-footer {
+    padding: 0 10px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.introducao button,
+.sobre button {
+    border-color: transparent;
+    border-radius: 2.5rem;
+    background: var(--cor-fundo);
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 2.25rem;
+    font-size: 1.5rem;
+}
+
+.introducao button a,
+.sobre button a {
+    padding: 10px 33.83px;
+    color: #fff;
+}
+
+.sobre, 
+.qualificacoes,
+footer {
+    background-color: var(--cor-fundo);
+}
+
+@media (max-width: 940px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+/* INTRODUÇÃO */
+.introducao {
+    display: flex;
+    flex-wrap: wrap-reverse; 
+    justify-content: space-between;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.apresentacao h1 span {
+    font-weight: 500;
+}
+
+.apresentacao h1 {
+    line-height: 3rem;
+    font-size: 3rem;
+    padding-bottom: 0.75rem;
+}
+
+.apresentacao p {
+    line-height: 2.5rem;
+    font-weight: 300;
+    font-size: 2rem;
+    padding-bottom: 2.5rem;
+}
+
+.apresentacao button {
+    transition: 300ms ease-in-out;
+}
+
+.apresentacao button:hover {
+    background: var(--cor-hover);
+}
+
+.foto-perfil {
+    margin-left: auto;
+}
+
+.foto-perfil img {
+    width: 12.5rem;
+}
+
+
+/* SOBRE */
+.sobre h2 {
+    padding-bottom: 30px;
+}
+
+.envoltorio-sobre p {
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 2.125rem;
+    padding-bottom: 1.25rem;
+}
+
+.caixa-btns {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3.75rem;
+}
+
+.caixa-btns-esqueda {
+    display: flex;
+    gap: 1rem; 
+}
+
+.fa-linkedin,
+.fa-github,
+.fa-whatsapp {
+    padding: 5px 0;
+    font-size: 3.125rem;
+    color: var(--cor-fonte);
+    transition: 300ms ease-in-out;
+}
+
+.fa-linkedin:hover,
+.fa-github:hover,
+.fa-whatsapp:hover {
+    color: var(--cor-hover);
+}
+
+.caixa-btns .btn-direita {
+    background: var(--cor-fonte);
+    transition: 300ms ease-in-out;
+}
+
+.caixa-btns .btn-direita:hover {
+    background: var(--cor-hover);
+}
+
+
+/* habilidades */
+.habilidades .caixa-icones {
+    padding: 0 0 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.habilidades p {
+    text-align: center;
+    margin-bottom: 3.75rem;
+}
+
+.habilidades p a {
+    display: inline;
+    font-size: 1.5rem;
+    line-height: 2.125rem;
+    color: var(--cor-fonte);
+    transition: 300ms ease-in-out;
+}
+
+.habilidades .fa-circle-chevron-down {
+    font-size: 1rem;
+}
+
+.habilidades p a:hover {
+    color: var(--cor-hover);
+}
+
+/* QUALIFICAÇÕES */
+section.qualificacoes h2 {
+    padding-bottom: 30px;
+}
+
+.qualificacoes {
+    padding-bottom: 3.75rem;
+}
+
+.qualificacoes h2 {
+    padding: 2.5rem;
+}
+
+.carousel-certificacoes {
+    position: relative;
+}
+
+.carousel-certificacoes .anterior,
+.carousel-certificacoes .proximo {
+    position: absolute;
+    top: 33.5%;
+    font-size: 2.5rem;
+    background: transparent;
+    border: none;
+}
+
+.carousel-certificacoes .proximo {
+    right: 0;
+    margin-right: 0.625rem;
+}
+
+.envoltorio-certificacoes {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3.625rem;
+    overflow-x: auto;
+}
+
+.certificacao {
+    flex-shrink: 0;
+}
+
+.certificacao h3,
+.certificacao p,
+.certificacao a {
+    line-height: 2.25rem;
+}
+
+.certificacao h3 {
+    font-size: 1.875rem;
+    margin-bottom: 5px;
+}
+
+.certificacao p {
+    font-size: 1.25rem;
+}
+
+.certificacao a {
+    display: inline;
+    color: var(--cor-fonte);
+    font-size: 1.125rem;
+    transition: 300ms ease-in-out;
+}
+
+.certificacao a:hover {
+    color: var(--cor-hover);
+}
+
+@media (max-width: 940px) {
+
+    .certificacao + .certificacao {
+        margin-left: 38px;
+    }
+    
+}
+
+/* PROJETOS */
+.carousel-projetos {
+    position: relative;
+}
+
+.carousel-projetos .anterior,
+.carousel-projetos .proximo {
+    position: absolute;
+    top: 39%;
+    font-size: 40px;
+    background: transparent;
+    border: none;
+}
+
+.carousel-projetos .proximo {
+    right: 0;
+}
+
+.envoltorio-projetos {
+    margin-bottom: 6.25rem;
+}
+
+.projeto {
+    max-width: 840px;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.projeto img {
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.25);
+}
+
+.descricao h3 {
+    margin: 1.25rem 0 0.625rem 2.5rem;
+    font-size: 1.875rem;
+    line-height: 2.25;
+}
+
+.descricao p {
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+}
+
+.descricao p,
+.descricao .btn-ver-projeto {
+    margin: 0 0 1.25rem 2.5rem;
+}
+
+.descricao .btn-ver-projeto {
+    border-color: transparent;
+    border-radius: 2.5rem;
+    background: var(--cor-fonte);
+    padding: 1px 45px;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+    transition: 300ms ease-in-out;
+}
+
+.descricao .btn-ver-projeto:hover {
+    background: var(--cor-hover);
+    cursor: pointer;
+}
+
+.descricao .btn-ver-projeto a {
+    color: #fff;
+}
+
+@media (max-width: 940px) {
+
+    .projetos .projeto {
+        flex-direction: column;
+    }
+
+    .projeto img {
+        border-radius: 10px 10px 0 0px;
+    }
+    
+}
+
+/* FOOTER */
+.envoltorio-footer {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
+
+.footer-esquerdo,
+.footer-direito {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    gap: 10px;
+    color: var(--cor-fonte);
+}
+
+.footer-esquerdo .fa-envelope{
+    font-size: 3.125rem;
+}
+
+.footer-direito .fa-phone {
+    font-size: 2.4375rem;
+}
+
+.envoltorio-footer  p {
+    font-size: 1.5rem;
+
+}
+
+footer > p {
+    text-align: center;
+    color: #fff;
+    background-color: var(--cor-fonte);
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    padding: 0.4375rem 0;
+}
+
