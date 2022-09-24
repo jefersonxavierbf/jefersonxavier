@@ -20,10 +20,15 @@ a {
 }
 
 h2 {
-    padding: 2.5rem 0;
+    padding: 24px 0 1rem;;
     text-align: center;
-    line-height: 2.25rem;
-    font-size: 2.5rem;
+    line-height: 1.875rem;
+    font-size: 1.5rem;
+}
+
+p {
+    line-height: 1.5625rem;
+    font-size: 1.125rem;
 }
 
 .introducao, 
@@ -32,7 +37,7 @@ h2 {
 .carousel-certificacoes,
 .projetos,
 .envoltorio-footer {
-    padding: 0 10px;
+    padding: 0 20px;
     max-width: 960px;
     margin: 0 auto;
 }
@@ -44,8 +49,8 @@ h2 {
     background: var(--cor-fundo);
     color: #fff;
     text-transform: uppercase;
-    line-height: 2.25rem;
-    font-size: 1.5rem;
+    /* line-height: 2.25rem; */
+    /* font-size: 1.5rem; */
 }
 
 .introducao button a,
@@ -60,19 +65,13 @@ footer {
     background-color: var(--cor-fundo);
 }
 
-@media (max-width: 940px) {
-    :root {
-        font-size: 14px;
-    }
-}
-
 /* INTRODUÇÃO */
 .introducao {
     display: flex;
     flex-wrap: wrap-reverse; 
     justify-content: space-between;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .apresentacao h1 span {
@@ -80,15 +79,13 @@ footer {
 }
 
 .apresentacao h1 {
-    line-height: 3rem;
-    font-size: 3rem;
+    line-height: 2.5rem;
+    font-size: 2.25rem;
     padding-bottom: 0.75rem;
 }
 
 .apresentacao p {
-    line-height: 2.5rem;
     font-weight: 300;
-    font-size: 2rem;
     padding-bottom: 2.5rem;
 }
 
@@ -105,26 +102,24 @@ footer {
 }
 
 .foto-perfil img {
-    width: 12.5rem;
+    width: 10rem;
 }
 
 
 /* SOBRE */
 .sobre h2 {
-    padding-bottom: 30px;
+    padding-bottom: 1rem;
 }
 
 .envoltorio-sobre p {
     text-align: justify;
-    font-size: 1.5rem;
-    line-height: 2.125rem;
-    padding-bottom: 1.25rem;
+    padding-bottom: 1rem;
 }
 
 .caixa-btns {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 3.75rem;
+    padding-bottom: 2rem;
 }
 
 .caixa-btns-esqueda {
@@ -136,7 +131,7 @@ footer {
 .fa-github,
 .fa-whatsapp {
     padding: 5px 0;
-    font-size: 3.125rem;
+    font-size: 2rem;
     color: var(--cor-fonte);
     transition: 300ms ease-in-out;
 }
@@ -159,7 +154,7 @@ footer {
 
 /* habilidades */
 .habilidades .caixa-icones {
-    padding: 0 0 2.5rem;
+    padding: 0 0 24px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -167,13 +162,11 @@ footer {
 
 .habilidades p {
     text-align: center;
-    margin-bottom: 3.75rem;
+    margin-bottom: 2rem;
 }
 
 .habilidades p a {
     display: inline;
-    font-size: 1.5rem;
-    line-height: 2.125rem;
     color: var(--cor-fonte);
     transition: 300ms ease-in-out;
 }
@@ -186,17 +179,19 @@ footer {
     color: var(--cor-hover);
 }
 
+.caixa-icones img {
+    width: 100px;
+    padding: 3.5px 0;
+}
+
 /* QUALIFICAÇÕES */
 section.qualificacoes h2 {
-    padding-bottom: 30px;
+    padding-bottom: 1rem;
+    padding-top: 1.5rem;
 }
 
 .qualificacoes {
-    padding-bottom: 3.75rem;
-}
-
-.qualificacoes h2 {
-    padding: 2.5rem;
+    padding-bottom: 2rem;
 }
 
 .carousel-certificacoes {
@@ -207,14 +202,15 @@ section.qualificacoes h2 {
 .carousel-certificacoes .proximo {
     position: absolute;
     top: 33.5%;
-    font-size: 2.5rem;
+    font-size: 1.125rem;
+    line-height: 1.5625;
     background: transparent;
     border: none;
 }
 
 .carousel-certificacoes .proximo {
     right: 0;
-    margin-right: 0.625rem;
+    margin-right: 1.25rem;
 }
 
 .envoltorio-certificacoes {
@@ -228,25 +224,20 @@ section.qualificacoes h2 {
     flex-shrink: 0;
 }
 
-.certificacao h3,
-.certificacao p,
-.certificacao a {
-    line-height: 2.25rem;
-}
-
 .certificacao h3 {
-    font-size: 1.875rem;
-    margin-bottom: 5px;
+    font-size: 1.125rem;
+    line-height: 1.5625;
 }
 
 .certificacao p {
-    font-size: 1.25rem;
+    padding-bottom: 8px;
 }
 
 .certificacao a {
     display: inline;
     color: var(--cor-fonte);
-    font-size: 1.125rem;
+    font-size: 0.875;
+    line-height: 1.25rem;
     transition: 300ms ease-in-out;
 }
 
@@ -271,7 +262,8 @@ section.qualificacoes h2 {
 .carousel-projetos .proximo {
     position: absolute;
     top: 39%;
-    font-size: 40px;
+    font-size: 1.125rem;
+    line-height: 1.5625;
     background: transparent;
     border: none;
 }
@@ -295,22 +287,23 @@ section.qualificacoes h2 {
 .projeto img {
     border-radius: 10px 0 0 10px;
     box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.25);
+    height: 200px;
 }
 
 .descricao h3 {
-    margin: 1.25rem 0 0.625rem 2.5rem;
-    font-size: 1.875rem;
-    line-height: 2.25;
-}
-
-.descricao p {
+    margin: 1rem 0 0.5rem 2.5rem;
     font-size: 1.125rem;
     line-height: 1.5625rem;
 }
 
+.descricao p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
 .descricao p,
 .descricao .btn-ver-projeto {
-    margin: 0 0 1.25rem 2.5rem;
+    margin: 0 1.5rem 0.5rem 2.5rem;
 }
 
 .descricao .btn-ver-projeto {
@@ -319,8 +312,8 @@ section.qualificacoes h2 {
     background: var(--cor-fonte);
     padding: 1px 45px;
     text-transform: uppercase;
-    font-size: 1.125rem;
-    line-height: 1.5625rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
     transition: 300ms ease-in-out;
 }
 
@@ -356,30 +349,25 @@ section.qualificacoes h2 {
 .footer-direito {
     display: flex;
     align-items: center;
-    padding: 15px 0;
+    padding: 8px 0;
     gap: 10px;
     color: var(--cor-fonte);
 }
 
 .footer-esquerdo .fa-envelope{
-    font-size: 3.125rem;
+    font-size: 2rem;
 }
 
 .footer-direito .fa-phone {
-    font-size: 2.4375rem;
-}
-
-.envoltorio-footer  p {
     font-size: 1.5rem;
-
 }
 
 footer > p {
     text-align: center;
     color: #fff;
     background-color: var(--cor-fonte);
-    font-size: 1.25rem;
-    line-height: 2.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
     padding: 0.4375rem 0;
 }
 
