@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-    padding: 3rem 0 1.5rem;;
+    padding: 3.75rem 0 1.5rem;;
     text-align: center;
     line-height: 1.875rem;
     font-size: 1.5rem;
@@ -326,17 +326,21 @@ footer {
 }
 
 /* FOOTER */
+footer {
+
+}
+
 .envoltorio-footer {
  display: flex;
  flex-wrap: wrap;
  justify-content: space-between;
+ padding: 8px 0;
 }
 
 .footer-esquerdo,
 .footer-direito {
     display: flex;
     align-items: center;
-    padding: 8px 0;
     gap: 10px;
     color: var(--cor-fonte);
 }
