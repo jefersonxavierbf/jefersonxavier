@@ -222,6 +222,7 @@ footer {
 
 .certificacao p {
     padding-bottom: 20px;
+    font-size: 1.0625rem;
 }
 
 .certificacao a {
@@ -346,18 +347,18 @@ footer {
 }
 
 .footer-esquerdo .fa-envelope{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .footer-direito .fa-phone {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 footer > p {
     text-align: center;
     color: #fff;
     background-color: var(--cor-fonte);
-    font-size: 0.875rem;
+    font-size: 1.0625rem;
     line-height: 1.25rem;
     padding: 0.4375rem 0;
 }
