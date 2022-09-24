@@ -222,6 +222,7 @@ section.qualificacoes h2 {
 
 .certificacao {
     flex-shrink: 0;
+    padding-bottom: 1.5rem;
 }
 
 .certificacao h3 {
