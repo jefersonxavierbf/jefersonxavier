@@ -1,5 +1,5 @@
 :root {
-    --cor-fonte: #140A08;
+    --cor-fonte: #222;
     --cor-fundo: #56C8EA;
     --cor-hover: #737373;
 }
@@ -41,12 +41,13 @@ h3 {
 p {
     line-height: 1.5625rem;
     font-size: 1.125rem;
+    hyphens: auto;
 }
 
 .introducao, 
 .envoltorio-sobre,
 .habilidades,
-.carousel-certificacoes,
+.envoltorio-qualificacoes,
 .projetos,
 .envoltorio-footer {
     padding: 0 20px;
@@ -57,7 +58,7 @@ p {
 .introducao button,
 .sobre button {
     border-color: transparent;
-    border-radius: 2.5rem;
+    border-radius: 0.2rem;
     background: var(--cor-fundo);
     color: #fff;
     text-transform: uppercase;
@@ -65,8 +66,11 @@ p {
 
 .introducao button a,
 .sobre button a {
-    padding: 10px 33.83px;
-    color: #fff;
+    padding: 15px 47px;
+    color: #222;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 0.8px;
 }
 
 .sobre, 
@@ -78,10 +82,10 @@ footer {
 /* INTRODUÇÃO */
 .introducao {
     display: flex;
-    flex-wrap: wrap-reverse; 
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
-    margin-top: 116px;
-    margin-bottom: 116px;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
 }
 
 .apresentacao h1 span {
@@ -103,17 +107,46 @@ footer {
 
 .foto-perfil {
     margin-left: auto;
+    background-color: #56C8EA;
+    border-radius: 0.2rem;
+    overflow: hidden;
 }
 
 .foto-perfil img {
-    width: 10rem;
+    max-width: 10rem;
+    width: 100%;
+    height: 100%;
+
 }
 
+@media (max-width: 680px) {
+
+    .introducao {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .foto-perfil {
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    
+}
 
 /* SOBRE */
+
+.sobre h2 {
+    font-size: 1.8rem;
+}
+
+.envoltorio-sobre {
+    padding: 3rem 20px;
+}
+
 .envoltorio-sobre p {
     text-align: justify;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+    line-height: 37px;
 }
 
 .caixa-btns {
@@ -142,9 +175,16 @@ footer {
     color: var(--cor-hover);
 }
 
-.caixa-btns .btn-direita {
-    background: var(--cor-fonte);
-    transition: 300ms ease-in-out;
+.caixa-btns button {
+    display: block;
+    background: #222;
+    margin: 0 auto;
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.caixa-btns button a {
+    color: #56C8EA;
 }
 
 .caixa-btns .btn-direita:hover {
@@ -152,176 +192,72 @@ footer {
 }
 
 
-/* habilidades */
-.habilidades .caixa-icones {
-    padding: 0 0 24px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.habilidades p {
-    text-align: center;
-    margin-bottom: 4.0625rem;
-}
-
-.habilidades p a {
-    display: inline;
-    color: var(--cor-fonte);
-    transition: 300ms ease-in-out;
-}
-
-.habilidades .fa-circle-chevron-down {
-    font-size: 1rem;
-}
-
-.habilidades p a:hover {
-    color: var(--cor-hover);
-}
-
-.caixa-icones img {
-    width: 100px;
-    padding: 3.5px 0;
-}
-
-/* QUALIFICAÇÕES */
-.qualificacoes {
-    padding-bottom: 5.4375rem;
-}
-
-.carousel-certificacoes {
-    position: relative;
-}
-
-.carousel-certificacoes .anterior,
-.carousel-certificacoes .proximo {
-    position: absolute;
-    top: 25%;
-    font-size: 1.125rem;
-    line-height: 1.5625rem;
-    background: transparent;
-    border: none;
-}
-
-.carousel-certificacoes .proximo {
-    right: 0;
-    margin-right: 1.25rem;
-}
-
-.envoltorio-certificacoes {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 3.625rem;
-    overflow-x: auto;
-}
-
-.certificacao {
-    flex-shrink: 0;
-    padding-bottom: 1.5rem;
-}
-
-.certificacao p {
-    padding-bottom: 20px;
-    font-size: 1.0625rem;
-}
-
-.certificacao a {
-    display: inline;
-    color: var(--cor-fonte);
-    font-size: 0.875;
-    line-height: 1.25rem;
-    transition: 300ms ease-in-out;
-}
-
-.certificacao a:hover {
-    color: var(--cor-hover);
-}
-
-@media (max-width: 940px) {
-
-    .certificacao + .certificacao {
-        margin-left: 38px;
-    }
-    
-}
-
 /* PROJETOS */
-.carousel-projetos {
-    position: relative;
-}
-
-.carousel-projetos .anterior,
-.carousel-projetos .proximo {
-    position: absolute;
-    top: 36%;
-    font-size: 1.125rem;
-    line-height: 1.5625rem;
-    background: transparent;
-    border: none;
-}
-
-.carousel-projetos .proximo {
-    right: 0;
-}
-
-.envoltorio-projetos {
-    margin-bottom: 7.25rem;
+.projetos {
+    padding: 2.8rem 0;
 }
 
 .projeto {
-    max-width: 840px;
+    max-width: 960px;
     margin: 0 auto;
-    display: flex;
     border-radius: 8px;
-    box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 7.25rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
 }
 
-.projeto img {
-    border-radius: 10px 0 0 10px;
-    /* box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.25); */
+.projetos h2 {
+    margin-bottom: 1.6rem;
+    font-size: 1.8rem;
 }
 
-.descricao h3 {
-    margin: 1rem 0 0.5rem 1.5rem;
+.projetos h3 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding-bottom: 0.5rem;
 }
 
-.descricao p {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+.projetos img {
+    width: 100%;
+    border-radius: 0.2rem;
 }
 
-.descricao p,
-.descricao .btn-ver-projeto {
-    margin: 0 1.5rem 1rem 1.5rem;
+.projeto p {
+    line-height: 36px;
+    hyphens: auto;
+    text-align: justify;
+    margin-bottom: 1.5rem;
 }
 
-.descricao .btn-ver-projeto {
-    border-color: transparent;
-    border-radius: 2.5rem;
-    background: var(--cor-fonte);
-    padding: 2px 42px;
-    text-transform: uppercase;
-    line-height: 1.25rem;
-    transition: 300ms ease-in-out;
+.projeto button {
+    background: #222;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 0.2rem;
 }
 
-.descricao .btn-ver-projeto:hover {
-    background: var(--cor-hover);
-    cursor: pointer;
+.projeto button a {
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.8px;
 }
 
-.descricao .btn-ver-projeto a {
-    color: #fff;
-}
 
 @media (max-width: 680px) {
 
     .projetos .projeto {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+
+    .descricao p, .descricao h3
+    .descricao .btn-ver-projeto {
+    margin: 0 0.5rem 1rem 0.5rem;
     }
 
     .projeto img {
-        border-radius: 10px 10px 0 0px;
+        /* border-radius: 10px 10px 0 0px; */
     }
     
 }
@@ -331,7 +267,7 @@ footer {
  display: flex;
  flex-wrap: wrap;
  justify-content: space-between;
- padding: 8px 0;
+ padding: 50px 0;
 }
 
 .footer-esquerdo,
@@ -356,7 +292,7 @@ footer > p {
     background-color: var(--cor-fonte);
     font-size: 1.0625rem;
     line-height: 1.25rem;
-    padding: 0.4375rem 0;
+    padding: 25px 0;
 }
 
 @media (max-width: 516px) {
