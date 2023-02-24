@@ -277,8 +277,12 @@ footer {
     cursor: pointer;
 }
 
-.contato .fa-linkedin-in {
+.contato .linkedin {
     margin: 0 3rem;
+}
+
+.fa-linkedin-in:hover {
+    background-color: re;
 }
 
 .contato .fa-angle-up {
