@@ -1,7 +1,6 @@
 :root {
     --cor-fonte: #222;
     --cor-fundo: #56C8EA;
-    --cor-hover: #737373;
 }
 
 * {
@@ -11,7 +10,6 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--cor-fonte);
 }
 
 a {
@@ -19,23 +17,11 @@ a {
     text-decoration: none;
 }
 
-h1 {
-    text-transform: capitalize;
-    line-height: 2.5rem;
-    font-size: 2.25rem;
-    padding-bottom: 0.75rem;
-}
-
 h2 {
     padding: 3.75rem 0 1.5rem;;
     text-align: center;
     line-height: 1.875rem;
-    font-size: 1.5rem;
-}
-
-h3 {
-    font-size: 1.125rem;
-    line-height: 1.5625;
+    font-size: 1.8rem;
 }
 
 p {
@@ -44,19 +30,16 @@ p {
     hyphens: auto;
 }
 
-.introducao, 
-.envoltorio-sobre,
-.habilidades,
-.envoltorio-qualificacoes,
-.projetos,
-.envoltorio-footer {
+#introducao, 
+.sobre-conteudo,
+#projetos {
     padding: 0 20px;
     max-width: 960px;
     margin: 0 auto;
 }
 
-.introducao button,
-.sobre button {
+#introducao button,
+#sobre button {
     border-color: transparent;
     border-radius: 0.2rem;
     background: var(--cor-fundo);
@@ -64,8 +47,8 @@ p {
     text-transform: uppercase;
 }
 
-.introducao button a,
-.sobre button a {
+#introducao button a,
+#sobre button a {
     padding: 15px 47px;
     color: #222;
     font-weight: bold;
@@ -73,19 +56,20 @@ p {
     letter-spacing: 0.8px;
 }
 
-.sobre, 
-.qualificacoes,
-footer {
-    background-color: var(--cor-fundo);
-}
-
 /* INTRODUÇÃO */
-.introducao {
+#introducao {
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
     padding-top: 15rem;
     margin-bottom: 15rem;
+}
+
+.apresentacao h1 {
+    text-transform: capitalize;
+    line-height: 2.5rem;
+    font-size: 2.25rem;
+    padding-bottom: 0.75rem;
 }
 
 .apresentacao h1 span {
@@ -97,16 +81,15 @@ footer {
     padding-bottom: 2.5rem;
 }
 
-.apresentacao button {
+#introducao .apresentacao button {
     transition: 300ms ease-in-out;
 }
 
-.apresentacao button:hover {
+#introducao .apresentacao button:hover {
     background: #7ad6f1;
 }
 
 .foto-perfil {
-    margin-left: auto;
     background-color: #56C8EA;
     border-radius: 0.2rem;
     overflow: hidden;
@@ -114,14 +97,12 @@ footer {
 
 .foto-perfil img {
     max-width: 10rem;
-    width: 100%;
     height: 100%;
-
 }
 
 @media (max-width: 680px) {
 
-    .introducao {
+    #introducao {
         padding-top: 8rem;
         text-align: center;
         justify-content: center;
@@ -135,33 +116,27 @@ footer {
 }
 
 /* SOBRE */
-
-.sobre h2 {
-    font-size: 1.8rem;
+#sobre {
+    background-color: var(--cor-fundo);
 }
 
-.envoltorio-sobre {
+.sobre-conteudo {
     padding: 3rem 20px;
 }
 
-.envoltorio-sobre p {
+.sobre-conteudo p {
     text-align: justify;
     padding-bottom: 2rem;
     line-height: 37px;
 }
 
-.caixa-btns {
+#sobre .caixa-btns {
     display: flex;
     justify-content: space-between;
     padding-bottom: 3.125rem;
 }
 
-.caixa-btns-esqueda {
-    display: flex;
-    gap: 1rem; 
-}
-
-.caixa-btns button {
+#sobre .caixa-btns button {
     display: block;
     background: #222;
     margin: 0 auto;
@@ -169,21 +144,17 @@ footer {
     margin-bottom: 2rem;
 }
 
-.caixa-btns button:hover {
+#sobre .caixa-btns button:hover {
     background: #383838;
 }
 
-.caixa-btns button a {
+#sobre .caixa-btns button a {
     color: #56C8EA;
-}
-
-.caixa-btns .btn-direita:hover {
-    background: var(--cor-hover);
 }
 
 
 /* PROJETOS */
-.projetos {
+#projetos {
     padding: 2.8rem 0;
 }
 
@@ -197,18 +168,17 @@ footer {
     gap: 32px;
 }
 
-.projetos h2 {
+#projetos h2 {
     margin-bottom: 1.6rem;
-    font-size: 1.8rem;
 }
 
-.projetos h3 {
+#projetos h3 {
     font-size: 1.5rem;
     line-height: 2.5rem;
     padding-bottom: 0.5rem;
 }
 
-.projetos img {
+#projetos img {
     width: 100%;
     border-radius: 0.2rem;
 }
@@ -240,7 +210,7 @@ footer {
 
 @media (max-width: 680px) {
 
-    .projetos .projeto {
+    #projetos .projeto {
         grid-template-columns: 1fr;
         padding: 16px;
     }
@@ -250,15 +220,20 @@ footer {
     margin: 0 0.5rem 1rem 0.5rem;
     }
 
-    .projeto img {
-        /* border-radius: 10px 10px 0 0px; */
+    #projetos h3 {
+        text-align: center;
     }
-    
+
+    #projetos button {
+        display: block;
+        margin: 0 auto;
+    }
+
 }
 
 /* FOOTER */
 
-.contato {
+.footer-contato {
     text-align: center;
     color: #fff;
     background-color: var(--cor-fonte);
@@ -267,17 +242,17 @@ footer {
     padding: 6rem 0;
 }
 
-.contato p {
+.footer-contato p {
     padding: 0.5rem 0;
     color: #808080;
 }
 
-.contato i {
+.footer-contato i {
     font-size: 1.6rem;
     cursor: pointer;
 }
 
-.contato .linkedin {
+.footer-contato .linkedin {
     margin: 0 3rem;
 }
 
@@ -285,14 +260,14 @@ footer {
     background-color: re;
 }
 
-.contato .fa-angle-up {
+.footer-contato .fa-angle-up {
     font-size: 1.3rem;
     color: #fff;
     
     
 }
 
-.contato a {
+.footer-contato a {
     margin: 0 auto 3.5rem;
     max-width: 5px;
 }
@@ -302,7 +277,7 @@ footer {
     color: #fff;
 }
 
-.contato hr {
+.footer-contato hr {
     max-width: 250px;
     margin: 2.5rem auto 0.5rem;
     border-color: #808080;
