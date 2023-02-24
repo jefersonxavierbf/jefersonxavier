@@ -59,7 +59,6 @@ p {
 /* INTRODUÇÃO */
 #introducao {
     display: flex;
-    flex-wrap: wrap-reverse;
     justify-content: space-between;
     padding-top: 15rem;
     margin-bottom: 15rem;
@@ -106,6 +105,7 @@ p {
         padding-top: 8rem;
         text-align: center;
         justify-content: center;
+        flex-direction: column-reverse;
     }
 
     .foto-perfil {
@@ -207,19 +207,14 @@ p {
     letter-spacing: 0.8px;
 }
 
-
-@media (max-width: 680px) {
+@media (max-width: 930px) {
 
     #projetos .projeto {
         grid-template-columns: 1fr;
         padding: 16px;
     }
 
-    .descricao p, .descricao h3
-    .descricao .btn-ver-projeto {
-    margin: 0 0.5rem 1rem 0.5rem;
-    }
-
+    
     #projetos h3 {
         text-align: center;
     }
@@ -230,6 +225,7 @@ p {
     }
 
 }
+
 
 /* FOOTER */
 
