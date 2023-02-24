@@ -84,7 +84,7 @@ footer {
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
-    margin-top: 15rem;
+    padding-top: 15rem;
     margin-bottom: 15rem;
 }
 
@@ -102,7 +102,7 @@ footer {
 }
 
 .apresentacao button:hover {
-    background: var(--cor-hover);
+    background: #7ad6f1;
 }
 
 .foto-perfil {
@@ -122,7 +122,7 @@ footer {
 @media (max-width: 680px) {
 
     .introducao {
-        margin-top: 8rem;
+        padding-top: 8rem;
         text-align: center;
         justify-content: center;
     }
@@ -161,27 +161,16 @@ footer {
     gap: 1rem; 
 }
 
-.fa-linkedin,
-.fa-github,
-.fa-whatsapp {
-    padding: 5px 0;
-    font-size: 2rem;
-    color: var(--cor-fonte);
-    transition: 300ms ease-in-out;
-}
-
-.fa-linkedin:hover,
-.fa-github:hover,
-.fa-whatsapp:hover {
-    color: var(--cor-hover);
-}
-
 .caixa-btns button {
     display: block;
     background: #222;
     margin: 0 auto;
     border: none;
     margin-bottom: 2rem;
+}
+
+.caixa-btns button:hover {
+    background: #383838;
 }
 
 .caixa-btns button a {
@@ -238,6 +227,10 @@ footer {
     border-radius: 0.2rem;
 }
 
+.projeto button:hover {
+    background: #383838;
+}
+
 .projeto button a {
     color: white;
     font-size: 1rem;
@@ -264,48 +257,49 @@ footer {
 }
 
 /* FOOTER */
-.envoltorio-footer {
- display: flex;
- flex-wrap: wrap;
- justify-content: space-between;
- padding: 50px 0;
-}
 
-.footer-esquerdo,
-.footer-direito {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--cor-fonte);
-}
-
-.footer-esquerdo .fa-envelope{
-    font-size: 1.5rem;
-}
-
-.footer-direito .fa-phone {
-    font-size: 1.25rem;
-}
-
-footer > p {
+.contato {
     text-align: center;
     color: #fff;
     background-color: var(--cor-fonte);
     font-size: 1.0625rem;
     line-height: 1.25rem;
-    padding: 25px 0;
+    padding: 6rem 0;
 }
 
-@media (max-width: 516px) {
-    .envoltorio-footer {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+.contato p {
+    padding: 0.5rem 0;
+    color: #808080;
+}
 
-    .footer-esquerdo,
-    .footer-direito {
-        padding: 4px;
-    }
+.contato i {
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.contato .fa-linkedin-in {
+    margin: 0 3rem;
+}
+
+.contato .fa-angle-up {
+    font-size: 1.3rem;
+    color: #fff;
     
+    
+}
+
+.contato a {
+    margin: 0 auto 3.5rem;
+    max-width: 5px;
+}
+
+.displayInline {
+    display: inline;
+    color: #fff;
+}
+
+.contato hr {
+    max-width: 250px;
+    margin: 2.5rem auto 0.5rem;
+    border-color: #808080;
 }
