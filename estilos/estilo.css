@@ -10,6 +10,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-fonte);
 }
 
 a {
@@ -191,6 +192,7 @@ p {
 }
 
 .projeto button {
+    cursor: pointer;
     background: #222;
     border: none;
     padding: 8px 20px;
