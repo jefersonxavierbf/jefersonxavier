@@ -195,7 +195,6 @@ p {
     cursor: pointer;
     background: #222;
     border: none;
-    padding: 8px 20px;
     border-radius: 0.2rem;
 }
 
@@ -207,6 +206,7 @@ p {
     color: white;
     font-size: 1rem;
     letter-spacing: 0.8px;
+    padding: 8px 20px;
 }
 
 .projeto img {
