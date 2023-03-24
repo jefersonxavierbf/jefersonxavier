@@ -51,10 +51,29 @@ p {
 #introducao button a,
 #sobre button a {
     padding: 15px 47px;
-    color: #222;
+    color: var(--cor-fonte);
     font-weight: bold;
     font-size: 0.9rem;
     letter-spacing: 0.8px;
+}
+
+/* ANIMAÇÃO */
+[data-anime] {
+    opacity: 0;
+    transition: .5s;
+}
+
+[data-anime="esquerda"] {
+    transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="direita"] {
+    transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
 }
 
 /* INTRODUÇÃO */
@@ -91,7 +110,7 @@ p {
 }
 
 .foto-perfil {
-    background-color: #56C8EA;
+    background-color: var(--cor-fundo);
     border-radius: 0.2rem;
     overflow: hidden;
 }
@@ -139,7 +158,7 @@ p {
 
 #sobre .caixa-btns button {
     display: block;
-    background: #222;
+    background: var(--cor-fonte);
     margin: 0 auto;
     border: none;
     margin-bottom: 2rem;
@@ -150,7 +169,7 @@ p {
 }
 
 #sobre .caixa-btns button a {
-    color: #56C8EA;
+    color: var(--cor-fundo);
 }
 
 
@@ -193,7 +212,7 @@ p {
 
 .projeto button {
     cursor: pointer;
-    background: #222;
+    background: var(--cor-fonte);
     border: none;
     border-radius: 0.2rem;
 }
