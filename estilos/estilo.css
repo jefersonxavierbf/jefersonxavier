@@ -60,7 +60,7 @@ p {
 /* ANIMAÇÃO */
 [data-anime] {
     opacity: 0;
-    transition: .5s;
+    transition: .1s;
 }
 
 [data-anime="esquerda"] {
